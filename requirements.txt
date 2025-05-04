@@ -1,0 +1,8 @@
+cachetools==5.5.2
+dotenv
+fastapi==0.115.12
+fastapi-cli==0.0.7
+redis==6.0.0
+SQLAlchemy==2.0.40
+sqlmodel==0.0.24
+uvicorn==0.34.2
