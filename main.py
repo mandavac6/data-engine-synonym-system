@@ -16,7 +16,7 @@ cache = LRUCache(maxsize=os.getenv('LRU_CACHE_SIZE', 10))
 # start a Redis client
 r = redis.Redis(host=os.getenv('REDIS_HOST', 'localhost'), port=int(os.getenv('REDIS_PORT', 6379)), db=0)
 ttl = int(os.getenv('TTL', 60))
-use_redis_cache = os.getenv('USE_REDIS_CACHE', 'True') == 'True'
+use_redis_cache = os.getenv('USE_REDIS_CACHE', 'False') == 'True'
 use_lru_cache = os.getenv('USE_LRU_CACHE', 'False') == 'True'
 
 
